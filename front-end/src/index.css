@@ -1,0 +1,22 @@
+:root {
+  --github-logo-width: 70px;
+  --github-logo-height: 70px;
+  --github-logo-stroke-size: 3px;
+  --github-logo-blur-stroke-size: 5px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  background-color: #000014;
+}
