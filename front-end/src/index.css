@@ -51,6 +51,18 @@ code {
   color: transparent;
 }
 
+.textarea {
+  background-color: #000029;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: white;
+  padding: 1em;
+  outline: none;
+  resize: none;
+  font-size: 20px;
+  vertical-align: top;
+}
+
 /* ↓↓----------------------elements-------------------------↓↓*/
 
 .container__content {
@@ -107,6 +119,32 @@ code {
   top: 0px;
   left: 0px;
   font-size: 50px;
+}
+
+.container__prompt-input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container__prompt-field {
+  position: relative;
+}
+
+.scince-gradient-circle__prompt-field {
+  --stoke-size: 2px;
+
+  position: absolute;
+  top: calc(0px - var(--stoke-size));
+  left: calc(0px - var(--stoke-size));
+  width: calc(100% + var(--stoke-size) * 2);
+  height: calc(100% + var(--stoke-size) * 2);
+  border-radius: 20px;
+}
+
+.textarea__prompt-field {
+  position: relative;
+  width: 500px;
+  height: 200px;
 }
 
 /* ↓↓----------------------modificators-------------------------↓↓*/

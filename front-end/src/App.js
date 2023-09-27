@@ -6,7 +6,7 @@ function App() {
     <div className="app default-font">
       <div className="container container__content">
         <div className="container container__header">
-          <div className="container">
+          <div className="side-block">
             <div className="container container__github-logo-container">
               <div className="scince-gradient-circle scince-gradient-circle__github-icon"></div>
               <div className="scince-gradient-circle scince-gradient-circle__github-icon scince-gradient-circle_blured"></div>
@@ -24,7 +24,21 @@ function App() {
           <div className="container">
           </div>
         </div>
+
+        <div className="container container__prompt-input-container">
+          <div class="container container__prompt-field">
+            <div className="scince-gradient-circle scince-gradient-circle__prompt-field"></div>
+            <div className="scince-gradient-circle scince-gradient-circle__prompt-field scince-gradient-circle_blured"></div>
+            <textarea className="textarea default-font textarea__prompt-field"></textarea>
+          </div>
+        </div>
+
+        <div className="container">
+
+        </div>
       </div>
+
+
     </div>
   );
 }
