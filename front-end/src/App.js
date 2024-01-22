@@ -4,40 +4,35 @@ import './App.css';
 function App() {
   return (
     <div className="app default-font">
-      <div className="container container__content">
-        <div className="container container__header">
-          <div className="side-block">
-            <div className="container container__github-logo-container">
-              <div className="scince-gradient-circle scince-gradient-circle__github-icon"></div>
-              <div className="scince-gradient-circle scince-gradient-circle__github-icon scince-gradient-circle_blured"></div>
-              <img class="circle-icon circle-icon__github-icon" src="images/github-mark-white.png" alt="Link to github"/>
-              </div>
-          </div>
 
-          <div className="container container__header-text">
-            <div className="container container__header-name-container">
-              <p className="background-text background-text__header-text header-text_blue-purpure-gradiented">Sentiment analysis</p>
-              <p className="background-text background-text__blured-header-text header-text_blured header-text_blue-purpure-gradiented">Sentiment analysis</p>
-            </div>
-          </div>
-
-          <div className="container">
-          </div>
-        </div>
-
-        <div className="container container__prompt-input-container">
-          <div class="container container__prompt-field">
-            <div className="scince-gradient-circle scince-gradient-circle__prompt-field"></div>
-            <div className="scince-gradient-circle scince-gradient-circle__prompt-field scince-gradient-circle_blured"></div>
-            <textarea className="textarea default-font textarea__prompt-field"></textarea>
-          </div>
-        </div>
-
-        <div className="container">
-
-        </div>
+      <div className="header-block">
+        <img className="image__header-git-hub-logo" src={process.env.PUBLIC_URL + '/images/github-mark-white-black-background.png'} alt="github logo"/>
+        <a className="default-font a__github-reference" href="https://github.com/KoTeuKaSeeker">github.com/KoTeuKaSeeker</a>
       </div>
 
+      <div className="content">
+        <div className="center-block">
+          <h1 className="default-font font_size-30px">
+            Difining a natural disaster
+          </h1>
+
+          <textarea className="default-font textarea-style textarea-style__prompt-textarea" placeholder="Enter a prompt...">
+
+          </textarea>
+
+          <button className="default-font button_style button-style__define-button">
+            to define
+          </button>
+
+          <div className="h1__disaster_text">
+            Disaster
+          </div>
+
+          <p className="default-font">
+            This text is 90% likely to be about a natural disaster
+          </p>
+      </div>
+      </div>
 
     </div>
   );
